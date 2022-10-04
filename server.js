@@ -9,6 +9,7 @@ const dbcontext = require('./services/db.context');
 const StoreRouter = require('./route/store.route');
 const StoreController = require('./controllers/store.controller');
 const UserRouter = require('./route/user.route');
+const ProductRouter = require('./route/product.route');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 //Routing
 app.use(StoreRouter);
 app.use(UserRouter);
+app.use(ProductRouter);
 //app.use(StoreController);
 
 
